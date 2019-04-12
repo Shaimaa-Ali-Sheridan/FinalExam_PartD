@@ -29,9 +29,9 @@ public class ATMSystem {
              String userName = sc.nextLine();
              atm.setAccountUserName(userName);
              
-             System.out.println("Please enter user name:");
+             System.out.println("Please enter password:");
              String password = sc.nextLine();
-             atm.setAccountUserName(userName);
+             atm.setAccountPassword(password);
          }
          else
          {
