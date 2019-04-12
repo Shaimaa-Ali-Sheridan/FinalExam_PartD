@@ -15,7 +15,7 @@ public class ATMSystem {
      */
     public static void main(String[] args) {
         
-        ATM atm = new ATM();
+        ATM atm = ATM.getInstance();
          //Display available options 
          System.out.println("Please choose the option number:");
          for (int i=0; i<ATM.ATM_OPTIONS.length; i++)

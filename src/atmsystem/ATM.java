@@ -14,6 +14,15 @@ public class ATM {
    
     final static String[] ATM_OPTIONS = {"login","deposit","withdraw"};
 
+    private static ATM onlyObject = null;
+    private ATM()
+    {}
+    public static ATM getInstance()
+    {
+        if (onlyObject == null)
+            onlyObject = new ATM();
+        return onlyObject;
+    }
     /**
      * @return the accountNumber
      */
